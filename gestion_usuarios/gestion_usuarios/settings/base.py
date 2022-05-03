@@ -34,7 +34,10 @@ DJANGO_APPS = (
 )
 
 #Mejorando la organizacion de nuestro proyecto
-LOCAL_APPS = ()
+LOCAL_APPS = (
+    'applications.home',
+    'applications.users'
+)
 
 THIRD_PARTY_APPS = ()
 
@@ -89,6 +92,8 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+#Definiendo la constante para que nuestro proyecto trabaje con este modelo de usuarios:
+AUTH_USER_MODEL = 'users.User'
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
